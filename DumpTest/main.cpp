@@ -23,7 +23,7 @@ int main(void) {
     }
 
     // Calculate 함수 호출
-    ULONG_PTR input = 12345;
+    ULONG_PTR input = 0x1234;
     void* result = Calculate(input);
     cout << "Calculate 함수의 결과: " << result << endl;
 
