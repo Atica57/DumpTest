@@ -2,6 +2,7 @@
 #include "pch.h"
 
 ULONG InitialCookie;
+char str[1024] = "[DLL]This is example for memory dump.";
 
 BOOL APIENTRY DllMain( HMODULE hModule,
                        DWORD  ul_reason_for_call,
