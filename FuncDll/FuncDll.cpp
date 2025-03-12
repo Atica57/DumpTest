@@ -27,3 +27,9 @@ extern "C" __declspec(dllexport) void* Calculate(ULONG_PTR Context)
     return (void*)((ULONG_PTR)(Context) ^ InitialCookie);
 }
 
+//print dll string variable
+extern "C" __declspec(dllexport) void PrintString()
+{
+	printf("%s\n", str);
+}
+
