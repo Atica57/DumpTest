@@ -28,6 +28,7 @@ int main(void) {
     void* result = Calculate(input);
     cout << "The result of Calculate : " << result << endl;
 
+    /*
     //print string variable
     PrintStringFunc PrintString = (PrintStringFunc)GetProcAddress(hModule, "PrintString");  
     if (PrintString == NULL) {
@@ -37,6 +38,14 @@ int main(void) {
 	}
     // PrintString 함수 호출
     PrintString();
+    */
+
+    //temp test
+    int a = 0;
+    printf("Enter a number = ");
+    scanf_s("%d", &a);
+    printf("You Entered = %d", a);
+
 
     // DLL 언로드
     FreeLibrary(hModule);
