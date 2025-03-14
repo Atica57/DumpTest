@@ -24,6 +24,10 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 // 임의의 수를 입력받아 출력하는 함수
 extern "C" __declspec(dllexport) void* Calculate(ULONG_PTR Context)
 {
+    WCHAR String[1024];
+    swprintf_s(String, ARRAYSIZE(String), L"%s\n", L"FuncDll/Calculate function started");
+    OutputDebugStringW(String);
+
     return (void*)((ULONG_PTR)(Context) ^ InitialCookie);
 }
 
